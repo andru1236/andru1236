@@ -14,24 +14,27 @@
 <text x="814.8" y="262" font-size="11.5" font-weight="600" text-anchor="middle" fill="#ab7df8">now</text>
 <text x="0" y="215.0" font-size="13.5" font-weight="600" fill="#f0f6fc">Full-stack web on Linux</text>
 <text x="0" y="231.0" font-size="11.5" fill="#9198a1">Boxit · Key Work ERP</text>
+<rect x="272.0" y="215.5" width="542.8" height="3" rx="1.5" fill="#ab7df8" fill-opacity="0.35"/>
 <rect x="272.0" y="212.0" width="88.0" height="10" rx="5" fill="#ab7df8"/>
-<rect x="356.0" y="215.5" width="458.8" height="3" rx="1.5" fill="#ab7df8" fill-opacity="0.35"/>
-<text x="0" y="177.0" font-size="13.5" font-weight="600" fill="#f0f6fc">Services, DDD and CQRS</text>
-<text x="0" y="193.0" font-size="11.5" fill="#9198a1">Expresa Tech · ScienceLogic</text>
-<rect x="360.0" y="174.0" width="181.5" height="10" rx="5" fill="#ab7df8"/>
-<rect x="537.5" y="177.5" width="277.3" height="3" rx="1.5" fill="#ab7df8" fill-opacity="0.35"/>
-<text x="0" y="139.0" font-size="13.5" font-weight="600" fill="#f0f6fc">Kubernetes and observability</text>
-<text x="0" y="155.0" font-size="11.5" fill="#9198a1">SINCPRO · 86+ clients in production</text>
-<rect x="492.0" y="136.0" width="322.8" height="10" rx="5" fill="#ab7df8"/>
-<text x="0" y="101.0" font-size="13.5" font-weight="600" fill="#f0f6fc">Business process and ERP</text>
-<text x="0" y="117.0" font-size="11.5" fill="#9198a1">Odoo functional · ISO 9001</text>
-<rect x="492.0" y="98.0" width="322.8" height="10" rx="5" fill="#ab7df8"/>
-<text x="0" y="63.0" font-size="13.5" font-weight="600" fill="#f0f6fc">Cloud services and data</text>
+<text x="0" y="177.0" font-size="13.5" font-weight="600" fill="#f0f6fc">Services, frontend and DDD</text>
+<text x="0" y="193.0" font-size="11.5" fill="#9198a1">Expresa Tech · ScienceLogic · PCI</text>
+<rect x="360.0" y="177.5" width="454.8" height="3" rx="1.5" fill="#ab7df8" fill-opacity="0.35"/>
+<rect x="360.0" y="174.0" width="385.0" height="10" rx="5" fill="#ab7df8"/>
+<text x="0" y="139.0" font-size="13.5" font-weight="600" fill="#f0f6fc">Product and business process</text>
+<text x="0" y="155.0" font-size="11.5" fill="#9198a1">SINCPRO implementations · Odoo functional</text>
+<rect x="492.0" y="139.5" width="322.8" height="3" rx="1.5" fill="#ab7df8" fill-opacity="0.35"/>
+<rect x="712.0" y="136.0" width="102.8" height="10" rx="5" fill="#ab7df8"/>
+<text x="0" y="101.0" font-size="13.5" font-weight="600" fill="#f0f6fc">Kubernetes and observability</text>
+<text x="0" y="117.0" font-size="11.5" fill="#9198a1">SINCPRO · 86+ clients in production</text>
+<rect x="492.0" y="101.5" width="322.8" height="3" rx="1.5" fill="#ab7df8" fill-opacity="0.35"/>
+<rect x="712.0" y="98.0" width="102.8" height="10" rx="5" fill="#ab7df8"/>
+<text x="0" y="63.0" font-size="13.5" font-weight="600" fill="#f0f6fc">Data processing and integrations</text>
 <text x="0" y="79.0" font-size="11.5" fill="#9198a1">Aetion · Electric</text>
-<rect x="547.0" y="60.0" width="198.0" height="10" rx="5" fill="#ab7df8"/>
-<rect x="741.0" y="63.5" width="73.8" height="3" rx="1.5" fill="#ab7df8" fill-opacity="0.35"/>
-<text x="0" y="25.0" font-size="13.5" font-weight="600" fill="#f0f6fc">AI-driven delivery</text>
-<text x="0" y="41.0" font-size="11.5" fill="#9198a1">Forge · MCP servers · frameworks</text>
+<rect x="602.0" y="63.5" width="212.8" height="3" rx="1.5" fill="#ab7df8" fill-opacity="0.35"/>
+<rect x="602.0" y="60.0" width="143.0" height="10" rx="5" fill="#ab7df8"/>
+<text x="0" y="25.0" font-size="13.5" font-weight="600" fill="#f0f6fc">Direction and AI-driven delivery</text>
+<text x="0" y="41.0" font-size="11.5" fill="#9198a1">SINCPRO full-time · Forge · MCP servers</text>
+<rect x="712.0" y="25.5" width="102.8" height="3" rx="1.5" fill="#ab7df8" fill-opacity="0.35"/>
 <rect x="712.0" y="22.0" width="102.8" height="10" rx="5" fill="#ab7df8"/>
 </g>
 </svg>

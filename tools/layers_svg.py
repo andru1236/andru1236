@@ -1,5 +1,5 @@
 """Draws the profile's layers chart, once per GitHub theme: each layer starts in its year, is
-thick while it was the main work and stays thin afterwards, so the right edge shows them all.
+thick while it was the main work and thin while it ran alongside it, so the right edge shows them all.
 
 usage: python3 layers_svg.py <out_dir>
 """
@@ -15,14 +15,14 @@ THEMES = {
 }
 
 NOW = 2026.87
-# name, evidence, starts, main work until (None: still the main work)
+# name, evidence, starts, main work from, main work until (None: today)
 LAYERS = [
-    ("Full-stack web on Linux", "Boxit · Key Work ERP", 2017.0, 2018.6),
-    ("Services, DDD and CQRS", "Expresa Tech · ScienceLogic", 2018.6, 2021.9),
-    ("Kubernetes and observability", "SINCPRO · 86+ clients in production", 2021.0, None),
-    ("Business process and ERP", "Odoo functional · ISO 9001", 2021.0, None),
-    ("Cloud services and data", "Aetion · Electric", 2022.0, 2025.6),
-    ("AI-driven delivery", "Forge · MCP servers · frameworks", 2025.0, None),
+    ("Full-stack web on Linux", "Boxit · Key Work ERP", 2017.0, 2017.0, 2018.6),
+    ("Services, frontend and DDD", "Expresa Tech · ScienceLogic · PCI", 2018.6, 2018.6, 2025.6),
+    ("Product and business process", "SINCPRO implementations · Odoo functional", 2021.0, 2025.0, None),
+    ("Kubernetes and observability", "SINCPRO · 86+ clients in production", 2021.0, 2025.0, None),
+    ("Data processing and integrations", "Aetion · Electric", 2023.0, 2023.0, 2025.6),
+    ("Direction and AI-driven delivery", "SINCPRO full-time · Forge · MCP servers", 2025.0, 2025.0, None),
 ]
 
 WIDTH = 860
@@ -65,20 +65,18 @@ def draw(theme: dict[str, str]) -> str:
         f'fill="{theme["accent"]}">now</text>',
     ]
 
-    for index, (name, evidence, starts, main_until) in enumerate(LAYERS):
+    for index, (name, evidence, starts, main_from, main_until) in enumerate(LAYERS):
         y = row_y(index)
-        main_end = x(main_until if main_until is not None else NOW)
+        thick_from, thick_until = x(main_from), x(main_until if main_until is not None else NOW)
         parts += [
             f'<text x="0" y="{y - 2}" font-size="13.5" font-weight="600" fill="{theme["primary"]}">{name}</text>',
             f'<text x="0" y="{y + 14}" font-size="11.5" fill="{theme["secondary"]}">{evidence}</text>',
-            f'<rect x="{x(starts)}" y="{y - 5}" width="{round(main_end - x(starts), 1)}" height="10" rx="5" '
+            # thin while it ran alongside the main work, thick while it was the main work
+            f'<rect x="{x(starts)}" y="{y - 1.5}" width="{round(now - x(starts), 1)}" height="3" rx="1.5" '
+            f'fill="{theme["accent"]}" fill-opacity="0.35"/>',
+            f'<rect x="{thick_from}" y="{y - 5}" width="{round(thick_until - thick_from, 1)}" height="10" rx="5" '
             f'fill="{theme["accent"]}"/>',
         ]
-        if main_until is not None:
-            parts.append(
-                f'<rect x="{main_end - 4}" y="{y - 1.5}" width="{round(now - main_end + 4, 1)}" height="3" '
-                f'rx="1.5" fill="{theme["accent"]}" fill-opacity="0.35"/>'
-            )
 
     parts += ["</g>", "</svg>", ""]
     return "\n".join(parts)

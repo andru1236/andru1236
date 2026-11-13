@@ -3,18 +3,19 @@
 **Principal Software Engineer at [SINCPRO](https://sincpro.dev)** · Cochabamba, Bolivia ·
 remote with US and Canadian teams since 2019
 
-I came into software as the industry moved from server-rendered monoliths to the cloud, and I
-have worked through each shift since. Each one added a layer instead of replacing the last, so
-today I see the whole system: the business process, the code, the infrastructure and how it
-runs in production.
+I came into software as the industry moved from server-rendered monoliths to the cloud. Until
+2025 my main work was technical, inside US and Canadian product teams; alongside it, I led client
+implementations at SINCPRO part-time and grew into product and process work. Each step added a
+layer instead of replacing the last, so today I see the whole system: the business process, the
+code, the infrastructure and how it runs in production.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/layers-dark.svg">
-  <img alt="Six layers, each added on top of the last and all still in use: full-stack web on Linux (2017), services, DDD and CQRS (2018), Kubernetes and observability (2021), business process and ERP (2021), cloud services and data (2022), AI-driven delivery (2025)." src="assets/layers-light.svg" width="100%">
+  <img alt="Six layers, thick while each was my main work and thin while it ran alongside it: full-stack web on Linux (2017–2018), services, frontend and DDD (2018–2025), product and business process (part-time from 2021, main since 2025), Kubernetes and observability (part-time from 2021, main since 2025), data processing and integrations (2023–2025), direction and AI-driven delivery (since 2025)." src="assets/layers-light.svg" width="100%">
 </picture>
 
-That is what I bring as an architect now that AI writes most of the code. At SINCPRO I lead 6
-engineers and 5 functional consultants, and my job is deciding what to build, how it fits
+Since 2025 I work at SINCPRO full time, and my focus is direction: I lead 6 engineers and 5
+functional consultants, and my job is deciding what to build, how it fits
 together, and keeping it secure and running for 86+ clients in production.
 
 ## How a change ships today
@@ -33,19 +34,22 @@ the real process.
 web for a Peruvian vendor, with e-invoicing for SUNAT, Peru's tax authority, signed and sent
 over SOAP. My first ERP.
 
-**Services, DDD and CQRS · 2018.** I joined US product teams through Jalasoft. On a survey
+**Services, frontend and DDD · 2018.** I joined US product teams through Jalasoft. On a survey
 platform we used DDD and CQRS over RabbitMQ to absorb traffic peaks. At ScienceLogic, which
 monitors networks and data centers for large enterprises, the client named me technical lead
 of the core platform while it moved from batch monoliths to microservices.
 
-**Kubernetes, the business and cloud data · 2021.** Two tracks at once. At SINCPRO I built the
-Kubernetes platform and its observability, and I learned the business side: as a certified
-Odoo functional implementer I sit with finance, imports and HR teams, map the process, and then
-build and run the software for it. Through Encora I worked inside US and Canadian product
-teams: synthetic health data on Ray and Spark at Aetion, an event-driven JumpCloud sync on AWS
-at Electric.
+**Data, integrations, and product on the side · 2021.** My main work stayed technical, inside
+US and Canadian product teams through Encora: synthetic health data on Ray and Spark at Aetion,
+a React trading client at PCI Energy Solutions, an event-driven JumpCloud integration on AWS at
+Electric. Part-time at SINCPRO, I led client implementations: defining the product and the
+process with each client and coordinating the team that built it. That is where product became
+a skill of mine, as a certified Odoo functional implementer who sits with finance, imports and
+HR teams.
 
-**AI-driven delivery · 2025.** It started with simple tools. Writing code got cheap, so the
+**Direction and AI-driven delivery · 2025.** I moved to SINCPRO full time, and my focus moved
+from building to directing: the platform, the frameworks and the client systems we had built,
+and how we build from here. It started with simple tools. Writing code got cheap, so the
 hard part moved to the spec, the architecture, the review and running it all in production. We
 first gave coding agents our rules and domain knowledge through MCP servers, then turned that
 into Forge. Today agents write most of our code from written specs, inside our own frameworks

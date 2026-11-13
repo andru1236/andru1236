@@ -1,4 +1,4 @@
-# Andres Gutierrez
+# Andres Gutierrez Panoso
 
 **Principal Software Engineer at [SINCPRO](https://sincpro.dev)** · Cochabamba, Bolivia ·
 remote with US and Canadian teams since 2019
